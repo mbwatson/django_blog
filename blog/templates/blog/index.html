@@ -5,5 +5,17 @@
 </head>
 <body>
 	<h1>Site Index</h1>
+	
+	<hr>
+
+	{% for post in posts %}
+		<div>
+			<h2>{{ post.title }}</h2>
+			<div>
+				Published: {{ post.published_date }}
+			</div>
+		</div>
+	{% endfor %}
+		
 </body>
 </html>
